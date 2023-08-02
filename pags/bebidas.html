@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas | Hungry Buzzard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Css/productos.css?v12">
+    <link rel="shortcut icon" href="../assets/img/Logo_Hungry_Buzzard.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="header__container">
+            <div class="header__titulo">
+                <img src="../assets/img/Logo_Hungry_Buzzard.png" alt="icono_de_la_tienda">
+                <h1>Hungry Buzzard!</h1>
+            </div>
+            <nav class="header__menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="menu_principal.html">Menú</a></li>
+                    <li><a href="menu_vegano.html">Veganos</a></li>
+                    <li><a href="bebidas.html">Bebidas</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.php">Contacto</a></li>
+                    <button class="header__pedido-icon" type="button"><i class="fa-solid fa-kitchen-set"></i></button>
+                    <!-- Contenedor del carrito -->
+                    <div class="cart-items-container">
+                        <div class="cart-items">
+                            <h2>Orden de Productos</h2>
+                            <table id="cart-items-table">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Producto</th>
+                                    <th>Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                            </table>
+                            <p id="cart-total-price">Precio total: $0</p>
+                            <button id="cart-button-buy" class="buttons" type="button">Comprar</button>
+                            <button id="cart-button-clear" class="buttons" type="button">Vaciar Pedido</button>
+                        </div>
+                        <button class="cart-close-button" type="button"><i class="fa-solid fa-times"></i></button>
+                    </div>
+                </ul>
+            </nav>
+            <div class="boton-de-busqueda">
+                <input type="text" id="search-input">
+                <button id="search-button" type="button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="seccion__productos">
+        <div class="seccion__productos-encabezado">
+            <h2>Bebidas</h2>
+            <h3>Mira nuestras mejores bebidas</h3>
+        </div>
+        <div class="seccion__productos-card">
+            <!-- fila 1 -->
+            <div class="seccion__productos-card-cards" data-categoria="alcohol refil">
+                <h2 class="seccion__productos-cards-titulo">Kvas</h2>
+                <img class="seccion__productos-cards-img" src="../assets/img/bebidas/kvas.jpg" alt="Producto 1">
+                <h3 class="seccion__productos-cards-descripcion">Refil</h3>
+                <p class="seccion__productos-cards-precio">$90</p>
+                <button class="buttons1" type="submit">Realizar el Pedido</button>
+                <button class="buttons2" type="submit">Comprar Individual</button>
+            </div>
+            <div class="seccion__productos-card-cards" data-categoria="Frambuesa refil">
+                <h2 class="seccion__productos-cards-titulo">Mors</h2>
+                <img class="seccion__productos-cards-img" src="../assets/img/bebidas/mors.jpg" alt="Producto 2">
+                <h3 class="seccion__productos-cards-descripcion">Refil</h3>
+                <p class="seccion__productos-cards-precio">$80</p>
+                <button class="buttons1" type="submit">Realizar el Pedido</button>
+                <button class="buttons2" type="submit">Comprar Individual</button>
+            </div>
+            <div class="seccion__productos-card-cards" data-categoria="zumo refil">
+                <h2 class="seccion__productos-cards-titulo">Zumo de Abedul</h2>
+                <img class="seccion__productos-cards-img" src="../assets/img/bebidas/Zumo-de-abedul.jpg" alt="Producto 3">
+                <h3 class="seccion__productos-cards-descripcion">Refil</h3>
+                <p class="seccion__productos-cards-precio">$70</p>
+                <button class="buttons1" type="submit">Realizar el Pedido</button>
+                <button class="buttons2" type="submit">Comprar Individual</button>
+            </div>
+            <div class="seccion__productos-card-cards" data-categoria="Frambuesa refil">
+                <h2 class="seccion__productos-cards-titulo">Kompot</h2>
+                <img class="seccion__productos-cards-img" src="../assets/img/bebidas/kompot.jpg" alt="Producto 4">
+                <h3 class="seccion__productos-cards-descripcion">Refil</h3>
+                <p class="seccion__productos-cards-precio">$80</p>
+                <button class="buttons1" type="submit">Realizar el Pedido</button>
+                <button class="buttons2" type="submit">Comprar Individual</button>
+            </div>
+            <!-- fila 2 -->
+            <div class="seccion__productos-card-cards" data-categoria="refresco gaseosa coca">
+                <h2 class="seccion__productos-cards-titulo">Refresco Coca Cola</h2>
+                <img class="seccion__productos-cards-img" src="../assets/img/bebidas/Coca-Cola.jpg" alt="Producto 5">
+                <h3 class="seccion__productos-cards-descripcion">NO Refil</h3>
+                <p class="seccion__productos-cards-precio">$70</p>
+                <button class="buttons1" type="submit">Realizar el Pedido</button>
+                <button class="buttons2" type="submit">Comprar Individual</button>
+            </div>
+            <div class="seccion__productos-card-cards" data-categoria="refresco gaseosa lata">
+                <h2 class="seccion__productos-cards-titulo">Regresco Fanta Lata</h2>
+                <img class="seccion__productos-cards-img" src="../assets/img/bebidas/Fanta-lata.jpg" alt="Producto 6">
+                <h3 class="seccion__productos-cards-descripcion">NO Refil</h3>
+                <p class="seccion__productos-cards-precio">$60</p>
+                <button class="buttons1" type="submit">Realizar el Pedido</button>
+                <button class="buttons2" type="submit">Comprar Individual</button>
+            </div>
+            <div class="seccion__productos-card-cards" data-categoria="refresco gaseosa lata">
+                <h2 class="seccion__productos-cards-titulo">Refresco Pepsi Lata</h2>
+                <img class="seccion__productos-cards-img" src="../assets/img/bebidas/Pepsi-Lata.jpg" alt="Producto 7">
+                <h3 class="seccion__productos-cards-descripcion">NO Refil</h3>
+                <p class="seccion__productos-cards-precio">$60</p>
+                <button class="buttons1" type="submit">Realizar el Pedido</button>
+                <button class="buttons2" type="submit">Comprar Individual</button>
+            </div>
+            <div class="seccion__productos-card-cards" data-categoria="refresco gaseosa lata">
+                <h2 class="seccion__productos-cards-titulo">Refresco Dr. Pepper</h2>
+                <img class="seccion__productos-cards-img" src="../assets/img/bebidas/DrPepper.jpg" alt="Producto 8">
+                <h3 class="seccion__productos-cards-descripcion">NO Refil</h3>
+                <p class="seccion__productos-cards-precio">$70</p>
+                <button class="buttons1" type="submit">Realizar el Pedido</button>
+                <button class="buttons2" type="submit">Comprar Individual</button>
+            </div>
+            <!-- fila 3 -->
+            <div class="seccion__productos-card-cards" data-categoria="agua sabor horchata refil">
+                <h2 class="seccion__productos-cards-titulo">Agua de Horchata</h2>
+                <img class="seccion__productos-cards-img" src="../assets/img/bebidas/agua-horchata.jpg" alt="Producto 9">
+                <h3 class="seccion__productos-cards-descripcion">Refil</h3>
+                <p class="seccion__productos-cards-precio">$80</p>
+                <button class="buttons1" type="submit">Realizar el Pedido</button>
+                <button class="buttons2" type="submit">Comprar Individual</button>
+            </div>
+            <div class="seccion__productos-card-cards" data-categoria="agua sabor jamaica refil">
+                <h2 class="seccion__productos-cards-titulo">Agua de Jamaica</h2>
+                <img class="seccion__productos-cards-img" src="../assets/img/bebidas/agua-jamaica.jpg" alt="Producto 10">
+                <h3 class="seccion__productos-cards-descripcion">Refil</h3>
+                <p class="seccion__productos-cards-precio">$80</p>
+                <button class="buttons1" type="submit">Realizar el Pedido</button>
+                <button class="buttons2" type="submit">Comprar Individual</button>
+            </div>
+            <div class="seccion__productos-card-cards" data-categoria="agua sabor pepino limon refil" id="oferta3">
+                <h2 class="seccion__productos-cards-titulo">Agua Pepino con Limón</h2>
+                <img class="seccion__productos-cards-img" src="../assets/img/bebidas/agua-de-pepino-con-limon.jpg" alt="Producto 11">
+                <h3 class="seccion__productos-cards-descripcion">Refil</h3>
+                <p class="seccion__productos-cards-precio">$80</p>
+                <button class="buttons1" type="submit">Realizar el Pedido</button>
+                <button class="buttons2" type="submit">Comprar Individual</button>
+            </div>
+            <div class="seccion__productos-card-cards" data-categoria="agua sabor fresa coco refil">
+                <h2 class="seccion__productos-cards-titulo">Agua Fresa y Coco</h2>
+                <img class="seccion__productos-cards-img" src="../assets/img/bebidas/fresa-coco.jpg" alt="Producto 12">
+                <h3 class="seccion__productos-cards-descripcion">Refil</h3>
+                <p class="seccion__productos-cards-precio">$80</p>
+                <button class="buttons1" type="submit">Realizar el Pedido</button>
+                <button class="buttons2" type="submit">Comprar Individual</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer__contenedor">
+            <div class="redes__sociales">
+                <h4>Visita Nuestras Redes Sociales</h4>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <div class="enlaces__importantes">
+                <h4>Enlaces Importantes</h4>
+                <a href="#">Términos y Condiciones</a>
+                <a href="#">Política y Privacidad</a>
+            </div>
+            <div class="contacto">
+                <h4>Contacto</h4>
+                <p>Correo: hungrybuzzard91@gmail.com</p>
+                <p>Telefono: 8172564523</p>
+            </div>
+        </div>
+        <span></span>
+        <h4 class="footer__titulo-final">&copy; JahirDLC | Este SitioWeb es un proyecto personal, sin fines de venta</h4>
+    </footer>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="../assets/js/bandeja_pedidos.js"></script>
+    <script src="../assets/js/search_input.js"></script>
+    <script>
+        // Función para aplicar el estilo personalizado del scroll
+        function applyCustomScroll() {
+            const scrollStyle = `
+                /* Estilos para el track del scroll (la barra) */
+                ::-webkit-scrollbar {
+                width: 10px; /* Ancho de la barra */
+                }
+        
+                /* Estilos para el thumb del scroll (el "brazo" que se desplaza) */
+                ::-webkit-scrollbar-thumb {
+                background-color: #01BF99; /* Color del thumb */
+                border-radius: 0px; /* Radio de los bordes del thumb */
+                }
+            `;
+      
+            const styleTag = document.createElement("style");
+            styleTag.appendChild(document.createTextNode(scrollStyle));
+            document.head.appendChild(styleTag);
+        }
+        // Ejecutar la función cuando el documento esté listo
+        document.addEventListener("DOMContentLoaded", applyCustomScroll);
+    </script>
+
+</body>
+</html>

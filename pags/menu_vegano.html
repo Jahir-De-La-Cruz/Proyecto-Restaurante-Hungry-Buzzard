@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Vegano | Hungry Buzzard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Css/productos.css?v12">
+    <link rel="shortcut icon" href="../assets/img/Logo_Hungry_Buzzard.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="header__container">
+            <div class="header__titulo">
+                <img src="../assets/img/Logo_Hungry_Buzzard.png" alt="icono_de_la_tienda">
+                <h1>Hungry Buzzard!</h1>
+            </div>
+            <nav class="header__menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="menu_principal.html">Menú</a></li>
+                    <li><a href="menu_vegano.html">Veganos</a></li>
+                    <li><a href="bebidas.html">Bebidas</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.php">Contacto</a></li>
+                    <button class="header__pedido-icon" type="button"><i class="fa-solid fa-kitchen-set"></i></button>
+                    <!-- Contenedor del carrito -->
+                    <div class="cart-items-container">
+                        <div class="cart-items">
+                            <h2>Orden de Productos</h2>
+                            <table id="cart-items-table">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Producto</th>
+                                    <th>Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                            </table>
+                            <p id="cart-total-price">Precio total: $0</p>
+                            <button id="cart-button-buy" class="buttons" type="button">Comprar</button>
+                            <button id="cart-button-clear" class="buttons" type="button">Vaciar Pedido</button>
+                        </div>
+                        <button class="cart-close-button" type="button"><i class="fa-solid fa-times"></i></button>
+                    </div>
+                </ul>
+            </nav>
+            <div class="boton-de-busqueda">
+                <input type="text" id="search-input">
+                <button id="search-button" type="button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="seccion__productos">
+        <div class="seccion__productos-encabezado">
+            <h2>Menú Vegano</h2>
+            <h3>Mira nuestros mejores platillos para veganos</h3>
+        </div>
+        <div class="seccion__productos-card">
+            <!-- fila 1 -->
+            <div class="seccion__productos-card-cards" data-categoria="ensalada">
+                <h2 class="seccion__productos-cards-titulo">Ensalada Rusa</h2>
+                <img class="seccion__productos-cards-img" src="../assets/img/menu-vegano/ensaladilla-rusa-vegana.jpg" alt="Producto 5">
+                <h3 class="seccion__productos-cards-descripcion">Ensalada de Patatas con Zanahoria</h3>
+                <p class="seccion__productos-cards-precio">$135</p>
+                <button class="buttons1" type="submit">Realizar el Pedido</button>
+                <button class="buttons2" type="submit">Comprar Individual</button>
+            </div>
+            <div class="seccion__productos-card-cards" data-categoria="sopa caldo">
+                <h2 class="seccion__productos-cards-titulo">Schi sin carne</h2>
+                <img class="seccion__productos-cards-img" src="../assets/img/menu-vegano/Schi-sin-carne.png" alt="Producto 6">
+                <h3 class="seccion__productos-cards-descripcion">Caldo con patatas y champiñones</h3>
+                <p class="seccion__productos-cards-precio">$140</p>
+                <button class="buttons1" type="submit">Realizar el Pedido</button>
+                <button class="buttons2" type="submit">Comprar Individual</button>
+            </div>
+            <div class="seccion__productos-card-cards" data-categoria="sopa caldo">
+                <h2 class="seccion__productos-cards-titulo">Sopa de Nabo</h2>
+                <img class="seccion__productos-cards-img" src="../assets/img/menu-vegano/sopa-de-nabo.png" alt="Producto 7">
+                <h3 class="seccion__productos-cards-descripcion">Nabo con chirivía, perejil y Cebolla</h3>
+                <p class="seccion__productos-cards-precio">$140</p>
+                <button class="buttons1" type="submit">Realizar el Pedido</button>
+                <button class="buttons2" type="submit">Comprar Individual</button>
+            </div>
+            <div class="seccion__productos-card-cards" data-categoria="ensalada">
+                <h2 class="seccion__productos-cards-titulo">Cobb</h2>
+                <img class="seccion__productos-cards-img" src="../assets/img/menu-vegano/Ensalada-Cobb.jpg" alt="Producto 8">
+                <h3 class="seccion__productos-cards-descripcion">Ensalada de aguacate con elote</h3>
+                <p class="seccion__productos-cards-precio">$135</p>
+                <button class="buttons1" type="submit">Realizar el Pedido</button>
+                <button class="buttons2" type="submit">Comprar Individual</button>
+            </div>
+            <!-- fila 2 -->
+            <div class="seccion__productos-card-cards" data-categoria="">
+                <h2 class="seccion__productos-cards-titulo">Gelatina de Kholodets</h2>
+                <img class="seccion__productos-cards-img" src="../assets/img/menu-vegano/kholodets.jpg" alt="Producto 5">
+                <h3 class="seccion__productos-cards-descripcion">Carne gelatinosa, servida con ensalada</h3>
+                <p class="seccion__productos-cards-precio">$155</p>
+                <button class="buttons1" type="submit">Realizar el Pedido</button>
+                <button class="buttons2" type="submit">Comprar Individual</button>
+            </div>
+            <div class="seccion__productos-card-cards" data-categoria="">
+                <h2 class="seccion__productos-cards-titulo">Empanadas de Champiñon</h2>
+                <img class="seccion__productos-cards-img" src="../assets/img/menu-vegano/Empanadillas-de-champiñones-sin-carne.png" alt="Producto 6">
+                <h3 class="seccion__productos-cards-descripcion">Empanadillas de Champiñones sin carne</h3>
+                <p class="seccion__productos-cards-precio">$80</p>
+                <button class="buttons1" type="submit">Realizar el Pedido</button>
+                <button class="buttons2" type="submit">Comprar Individual</button>
+            </div>
+            <div class="seccion__productos-card-cards" data-categoria="">
+                <h2 class="seccion__productos-cards-titulo">Gachas de Smolensk </h2>
+                <img class="seccion__productos-cards-img" src="../assets/img/menu-vegano/Gachas-de-Smolensk.png" alt="Producto 7">
+                <h3 class="seccion__productos-cards-descripcion">Arroz con jugo de arándanos rojos</h3>
+                <p class="seccion__productos-cards-precio">$130</p>
+                <button class="buttons1" type="submit">Realizar el Pedido</button>
+                <button class="buttons2" type="submit">Comprar Individual</button>
+            </div>
+            <div class="seccion__productos-card-cards" data-categoria="" id="oferta2">
+                <h2 class="seccion__productos-cards-titulo">Ensalada de Zanahoria</h2>
+                <img class="seccion__productos-cards-img" src="../assets/img/menu-vegano/Ensalada-de-zanahoria.png" alt="Producto 9">
+                <h3 class="seccion__productos-cards-descripcion">Ensalada de Zanahoria con Cilantro</h3>
+                <p class="seccion__productos-cards-precio">$120</p>
+                <button class="buttons1" type="submit">Realizar el Pedido</button>
+                <button class="buttons2" type="submit">Comprar Individual</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer__contenedor">
+            <div class="redes__sociales">
+                <h4>Visita Nuestras Redes Sociales</h4>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <div class="enlaces__importantes">
+                <h4>Enlaces Importantes</h4>
+                <a href="#">Términos y Condiciones</a>
+                <a href="#">Política y Privacidad</a>
+            </div>
+            <div class="contacto">
+                <h4>Contacto</h4>
+                <p>Correo: hungrybuzzard91@gmail.com</p>
+                <p>Telefono: 8172564523</p>
+            </div>
+        </div>
+        <span></span>
+        <h4 class="footer__titulo-final">&copy; JahirDLC | Este SitioWeb es un proyecto personal, sin fines de venta</h4>
+    </footer>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="../assets/js/bandeja_pedidos.js"></script>
+    <script src="../assets/js/search_input.js"></script>
+    <script>
+        // Función para aplicar el estilo personalizado del scroll
+        function applyCustomScroll() {
+            const scrollStyle = `
+                /* Estilos para el track del scroll (la barra) */
+                ::-webkit-scrollbar {
+                width: 10px; /* Ancho de la barra */
+                }
+        
+                /* Estilos para el thumb del scroll (el "brazo" que se desplaza) */
+                ::-webkit-scrollbar-thumb {
+                background-color: #01BF99; /* Color del thumb */
+                border-radius: 0px; /* Radio de los bordes del thumb */
+                }
+            `;
+      
+            const styleTag = document.createElement("style");
+            styleTag.appendChild(document.createTextNode(scrollStyle));
+            document.head.appendChild(styleTag);
+        }
+        // Ejecutar la función cuando el documento esté listo
+        document.addEventListener("DOMContentLoaded", applyCustomScroll);
+    </script>
+
+</body>
+</html>
