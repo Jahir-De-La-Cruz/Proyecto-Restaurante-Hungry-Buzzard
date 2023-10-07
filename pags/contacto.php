@@ -8,6 +8,7 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../Css/contacto.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/img/Logo_Hungry_Buzzard.png" type="image/x-icon">
 </head>
 <body>
@@ -30,7 +31,7 @@
             </nav>
         </div>
         <div class="header__info">
-            <div class="header__info-textos">
+            <div class="header__info-textos" data-aos="fade-up" data-aos-duration="1000">
                 <h2>Tienes alguna duda? Contactanos</h2>
                 <h4>Excelente atención a clientes, respuestas en menos de 24hrs!</h4>
             </div>
@@ -39,7 +40,7 @@
 
     <main>
         <section class="contenedor__formulario">
-            <div class="contenedor__formulario-form">
+            <div class="contenedor__formulario-form" data-aos="fade-up" data-aos-duration="1000">
                 <h2>Contacta directo a hungrybuzzard91@gmail.com</h2>
                 <form action="../assets/php/enviar__correo.php" method="POST" autocomplete="off">
                     <div class="contenedor__formulario-form-group">
@@ -138,6 +139,10 @@
         }
         // Ejecutar la función cuando el documento esté listo
         document.addEventListener("DOMContentLoaded", applyCustomScroll);
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
 </body>

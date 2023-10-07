@@ -8,11 +8,13 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Css/estilos.css?v1">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="assets/img/Logo_Hungry_Buzzard.png" type="image/x-icon">
 </head>
 <body>
     
     <header>
+        <video src="assets/img/Portada.mp4" autoplay loop></video>
         <div class="header__container">
             <div class="header__titulo">
                 <img src="assets/img/Logo_Hungry_Buzzard.png" alt="icono_de_la_tienda">
@@ -53,7 +55,7 @@
     </header>
 
     <section class="seccion__presentacion">
-        <div class="seccion__presentacion-textos">
+        <div class="seccion__presentacion-textos" data-aos="fade-up" data-aos-duration="1000">
             <h2 class="seccion__presentacion-titulo">¿Quiénes Somos?</h2>
             <p class="seccion__presentacion-descripcion">Somos una empresa que elabora y distribuye Snacks Rusos. 
                 Nuestro principal producto se elabora con los mejores chefs del mundo y se sirve en tus comensales
@@ -65,13 +67,13 @@
 
     <section class="seccion__productos">
         <div class="seccion__productos-encabezado">
-            <h2>Productos Principales</h2>
-            <h3>Puedes encontrar nuestro menú completo <a href="pags/menu_principal.html">aquí</a> y también nuestro
+            <h2 data-aos="fade-down" data-aos-duration="1500">Productos Principales</h2>
+            <h3 data-aos="fade-down" data-aos-duration="1500">Puedes encontrar nuestro menú completo <a href="pags/menu_principal.html">aquí</a> y también nuestro
             menú para veganos <a href="pags/menu_vegano.html">aquí</a></h3>
         </div>
         <div class="seccion__productos-card">
             <!-- fila 1 -->
-            <div class="seccion__productos-card-cards">
+            <div class="seccion__productos-card-cards" data-aos="fade-down" data-aos-duration="1500">
                 <h2 class="seccion__productos-cards-titulo">Palmeni</h2>
                 <img class="seccion__productos-cards-img" src="assets/img/menu-principal/pelmeni.jpg" alt="Producto 1">
                 <h3 class="seccion__productos-cards-descripcion">Enrollado de carne o pollo y huevo duro</h3>
@@ -79,7 +81,7 @@
                 <button class="buttons1" type="submit">Realizar el Pedido</button>
                 <button class="buttons2" type="submit">Comprar Individual</button>
             </div>
-            <div class="seccion__productos-card-cards">
+            <div class="seccion__productos-card-cards" data-aos="fade-down" data-aos-duration="1500">
                 <h2 class="seccion__productos-cards-titulo">Shashlyk</h2>
                 <img class="seccion__productos-cards-img" src="assets/img/menu-principal/Shashlik.jpg" alt="Producto 2">
                 <h3 class="seccion__productos-cards-descripcion">Plato preparado con carne y cebolla</h3>
@@ -87,7 +89,7 @@
                 <button class="buttons1" type="submit">Realizar el Pedido</button>
                 <button class="buttons2" type="submit">Comprar Individual</button>
             </div>
-            <div class="seccion__productos-card-cards">
+            <div class="seccion__productos-card-cards" data-aos="fade-down" data-aos-duration="1500">
                 <h2 class="seccion__productos-cards-titulo">Borsch</h2>
                 <img class="seccion__productos-cards-img" src="assets/img/menu-principal/borsch.jpg" alt="Producto 3">
                 <h3 class="seccion__productos-cards-descripcion">Hay dos tipos de Borsch, el frió y el caliente</h3>
@@ -95,7 +97,7 @@
                 <button class="buttons1" type="submit">Realizar el Pedido</button>
                 <button class="buttons2" type="submit">Comprar Individual</button>
             </div>
-            <div class="seccion__productos-card-cards">
+            <div class="seccion__productos-card-cards" data-aos="fade-down" data-aos-duration="1500">
                 <h2 class="seccion__productos-cards-titulo">Uja</h2>
                 <img class="seccion__productos-cards-img" src="assets/img/menu-principal/uja.jpg" alt="Producto 4">
                 <h3 class="seccion__productos-cards-descripcion">Sopa de salmón o bacalao con patatas</h3>
@@ -104,7 +106,7 @@
                 <button class="buttons2" type="submit">Comprar Individual</button>
             </div>
             <!-- fila 2 -->
-            <div class="seccion__productos-card-cards">
+            <div class="seccion__productos-card-cards" data-aos="fade-down" data-aos-duration="1500">
                 <h2 class="seccion__productos-cards-titulo">Ensalada Rusa</h2>
                 <img class="seccion__productos-cards-img" src="assets/img/menu-vegano/ensaladilla-rusa-vegana.jpg" alt="Producto 5">
                 <h3 class="seccion__productos-cards-descripcion">Ensalada de Patatas con Zanahoria</h3>
@@ -112,7 +114,7 @@
                 <button class="buttons1" type="submit">Realizar el Pedido</button>
                 <button class="buttons2" type="submit">Comprar Individual</button>
             </div>
-            <div class="seccion__productos-card-cards">
+            <div class="seccion__productos-card-cards" data-aos="fade-down" data-aos-duration="1500">
                 <h2 class="seccion__productos-cards-titulo">Schi sin carne</h2>
                 <img class="seccion__productos-cards-img" src="assets/img/menu-vegano/Schi-sin-carne.png" alt="Producto 6">
                 <h3 class="seccion__productos-cards-descripcion">Caldo con patatas y champiñones</h3>
@@ -120,7 +122,7 @@
                 <button class="buttons1" type="submit">Realizar el Pedido</button>
                 <button class="buttons2" type="submit">Comprar Individual</button>
             </div>
-            <div class="seccion__productos-card-cards">
+            <div class="seccion__productos-card-cards" data-aos="fade-down" data-aos-duration="1500">
                 <h2 class="seccion__productos-cards-titulo">Sopa de Nabo</h2>
                 <img class="seccion__productos-cards-img" src="assets/img/menu-vegano/sopa-de-nabo.png" alt="Producto 7">
                 <h3 class="seccion__productos-cards-descripcion">Nabo con chirivía, perejil y Cebolla</h3>
@@ -128,7 +130,7 @@
                 <button class="buttons1" type="submit">Realizar el Pedido</button>
                 <button class="buttons2" type="submit">Comprar Individual</button>
             </div>
-            <div class="seccion__productos-card-cards">
+            <div class="seccion__productos-card-cards" data-aos="fade-down" data-aos-duration="1500">
                 <h2 class="seccion__productos-cards-titulo">Cobb</h2>
                 <img class="seccion__productos-cards-img" src="assets/img/menu-vegano/Ensalada-Cobb.jpg" alt="Producto 8">
                 <h3 class="seccion__productos-cards-descripcion">Ensalada de aguacate con elote</h3>
@@ -140,7 +142,7 @@
     </section>
 
     <section class="seccion__solicitud">
-        <div class="seccion__solicitud-info">
+        <div class="seccion__solicitud-info" data-aos="fade-right" data-aos-duration="1000">
             <h2>¿Buscas Trabajo? Estamos contratando Meseros!</h2>
             <h3>¿Que Pasos debo seguir?</h3>
             <ul>
@@ -169,7 +171,7 @@
     </section>
 
     <section class="seccion__blog">
-        <div class="seccion__blog-info">
+        <div class="seccion__blog-info" data-aos="zoom-in" data-aos-duration="1500">
             <h2>Visita Nuestro Blog!</h2>
             <p>En esa sección encontraras distintos productos, además de que se encuentran a grandes ofertas!</p>
             <a href="pags/blog.html">Clic para ir al Blog</a>
@@ -180,10 +182,10 @@
         <div class="footer__contenedor">
             <div class="redes__sociales">
                 <h4>Visita Nuestras Redes Sociales</h4>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#" ><i class="fab fa-facebook-f"></i></a>
+                <a href="#" ><i class="fab fa-instagram"></i></a>
+                <a href="#" ><i class="fab fa-twitter"></i></a>
+                <a href="#" ><i class="fab fa-tiktok"></i></a>
             </div>
             <div class="enlaces__importantes">
                 <h4>Enlaces Importantes</h4>
@@ -270,6 +272,10 @@
                 });
             });
         }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
 </body>

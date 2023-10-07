@@ -87,6 +87,7 @@ body {
     color: var(--texto1);
     font-size: 40px;
     font-weight: bold;
+    font-style: italic;
 }
 
 .header__menu ul {
